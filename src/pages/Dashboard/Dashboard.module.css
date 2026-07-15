@@ -1,0 +1,162 @@
+.dashboardContainer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.lastUpdated {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--safe-green);
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: rgba(0, 255, 102, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 102, 0.2);
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--safe-green);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.topStatCard {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-left: 4px solid var(--stat-color);
+}
+
+.statIconWrapper {
+  color: var(--stat-color);
+  background: color-mix(in srgb, var(--stat-color) 15%, transparent);
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+}
+
+.statInfo h4 {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.statValue {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.chartCard {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.chartCard h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.chartWrapper {
+  height: 300px;
+  width: 100%;
+}
+
+.tableCard {
+  padding: 1.5rem;
+}
+
+.tableCard h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.alertsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.alertsTable th {
+  text-align: left;
+  padding: 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.alertsTable td {
+  padding: 1rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.riskBadge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.riskBadge.critical {
+  background: rgba(255, 51, 102, 0.2);
+  color: var(--danger-red);
+  border: 1px solid var(--danger-red);
+}
+
+.riskBadge.high {
+  background: rgba(255, 153, 0, 0.2);
+  color: var(--warning-orange);
+  border: 1px solid var(--warning-orange);
+}
+
+.riskBadge.medium {
+  background: rgba(0, 229, 255, 0.2);
+  color: var(--accent-cyan);
+  border: 1px solid var(--accent-cyan);
+}
+
+.riskBadge.low {
+  background: rgba(0, 255, 102, 0.2);
+  color: var(--safe-green);
+  border: 1px solid var(--safe-green);
+}

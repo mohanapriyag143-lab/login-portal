@@ -1,0 +1,169 @@
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+}
+
+.inputPanel, .outputPanel {
+  padding: 2rem;
+}
+
+.inputPanel h3, .outputPanel h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-cyan);
+}
+
+.formGroup {
+  margin-bottom: 1.2rem;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.inputWrapper input {
+  padding-left: 2.5rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
+.analyzeBtn {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+.analyzeBtn:hover {
+  background: rgba(0, 229, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.riskMeterSection {
+  margin-bottom: 2rem;
+}
+
+.riskMeter {
+  height: 20px;
+  background: linear-gradient(90deg, var(--safe-green) 0%, var(--warning-orange) 50%, var(--danger-red) 100%);
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.meterFill {
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.2;
+  background: #000;
+  position: absolute;
+  right: 0;
+  width: 0%; /* Reverse fill effect logic if needed */
+}
+
+.needle {
+  position: absolute;
+  top: -5px;
+  width: 4px;
+  height: 30px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #fff;
+  transform: translateX(-50%);
+}
+
+.riskLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.criticalText {
+  color: var(--danger-red);
+  font-weight: 700;
+}
+
+.aiExplanation h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.reasonList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reasonList li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+}
+
+.reasonList .danger { color: var(--danger-red); }
+.reasonList .warning { color: var(--warning-orange); }
+.reasonList .safe { color: var(--safe-green); }
+
+.confidence {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--glass-border);
+  font-size: 1.1rem;
+  color: var(--accent-cyan);
+}
