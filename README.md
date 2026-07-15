@@ -1,16 +1,98 @@
-# React + Vite
+# 🛡 SentinelAI — AI-Powered Banking Cybersecurity Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> **"One Platform. Every Signal. Zero Blind Spots."**
 
-Currently, two official plugins are available:
+A premium, futuristic banking cybersecurity web application that detects banking fraud by correlating cybersecurity telemetry and transaction behavior using Artificial Intelligence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Run locally: `npm install && npm run dev` → http://localhost:5173
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ✨ Features
+
+| Page | Description |
+|------|-------------|
+| 🏠 **Home** | Animated landing page with AI shield, scanning animation, live stats |
+| 📊 **Dashboard** | Live transaction charts, fraud trend, risk distribution pie, alert table |
+| 🌍 **Threat Map** | Global attack map with pulsing markers, hover tooltips, live feed |
+| 🤖 **AI Analysis** | Explainable AI risk meter, fraud reasons, transaction analysis |
+| 👤 **Digital Twin** | Normal vs Current behavior comparison with anomaly score |
+| 📄 **Reports** | 4 unique investigation reports with PDF download (auto print dialog) |
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **React 19 + Vite 8** | Frontend framework + blazing fast build tool |
+| **React Router DOM** | Multi-page navigation |
+| **Recharts** | Live transaction & fraud trend charts |
+| **Framer Motion** | Smooth page & card animations |
+| **Lucide React** | Modern icon library |
+| **Vanilla CSS** | Custom dark glassmorphism theme |
+
+---
+
+## 🎨 Design System
+
+- **Dark Theme**: `#050816` background, `#0B1120` panels
+- **Accent**: `#00E5FF` neon cyan + `#22D3EE` blue
+- **Glassmorphism**: Frosted glass panels with glowing borders
+- **Animations**: Framer Motion transitions, scanning lines, pulse rings
+- **Typography**: Inter (Google Fonts)
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── components/
+│   └── Navbar/
+├── pages/
+│   ├── Home/
+│   ├── Dashboard/
+│   ├── ThreatMap/
+│   ├── AIAnalysis/
+│   ├── DigitalTwin/
+│   └── Reports/
+├── mockData/
+├── App.jsx
+└── index.css
+```
+
+---
+
+## ⚡ Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/mohanapriyag143-lab/SentinelAI.git
+cd SentinelAI
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+```
+
+Open **http://localhost:5173**
+
+---
+
+## 🏆 Built For
+
+**Hackathon Project** — AI-Powered Banking Fraud Detection  
+Demonstrating Explainable AI (XAI) in Financial Cybersecurity
+
+---
+
+## 👩‍💻 Developer
+
+**Mohanapriya G** — [@mohanapriyag143-lab](https://github.com/mohanapriyag143-lab)
