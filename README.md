@@ -1,4 +1,4 @@
-# 🛡 SentinelAI — AI-Powered Banking Cybersecurity Platform
+# 🛡 FortiSentinel AI — AI-Powered Banking Cybersecurity Platform
 
 > **"One Platform. Every Signal. Zero Blind Spots."**
 

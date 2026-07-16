@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className={`glass-panel ${styles.navbar}`}>
       <div className={styles.logo}>
         <Shield className={styles.logoIcon} size={24} />
-        <span className={`glow-text ${styles.logoText}`}>SentinelAI</span>
+        <span className={`glow-text ${styles.logoText}`}>FortiSentinel AI</span>
       </div>
       
       <div className={styles.navLinks}>

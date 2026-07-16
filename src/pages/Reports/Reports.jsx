@@ -78,7 +78,7 @@ const generateReport = (inc) => {
   ).join('');
   const actionsHTML = inc.actions.map((a, i) => `<p>${i + 1}. ${a}</p>`).join('');
 
-  const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"/><title>SentinelAI ${inc.id}</title>
+  const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"/><title>FortiSentinel AI ${inc.id}</title>
 <style>
 *{box-sizing:border-box}body{font-family:Arial,sans-serif;margin:40px;color:#111;background:#fff;font-size:13px}
 .hdr{display:flex;justify-content:space-between;border-bottom:3px solid #00bcd4;padding-bottom:14px;margin-bottom:20px}
@@ -93,7 +93,7 @@ table{width:100%;border-collapse:collapse;font-size:12px}th{background:#f0f0f0;p
 .ri{margin:4px 0;color:#cc0000}
 .ft{margin-top:30px;border-top:1px solid #eee;padding-top:12px;font-size:10px;color:#999;text-align:center}
 </style></head><body>
-<div class="hdr"><div class="logo">SentinelAI</div><div class="meta"><div><b>Report ID:</b> ${inc.id}</div><div><b>Generated:</b> ${now}</div><div><b>Classification:</b> CONFIDENTIAL</div></div></div>
+<div class="hdr"><div class="logo">FortiSentinel AI</div><div class="meta"><div><b>Report ID:</b> ${inc.id}</div><div><b>Generated:</b> ${now}</div><div><b>Classification:</b> CONFIDENTIAL</div></div></div>
 <div class="banner">SECURITY INCIDENT — ${inc.risk.toUpperCase()} — ${inc.status.toUpperCase()}</div>
 <h2>1. Incident Summary</h2>
 <table><tr><th>Field</th><th>Details</th></tr><tr><td>Customer</td><td>${inc.customer} (${inc.custId})</td></tr><tr><td>Incident Type</td><td>${inc.type}</td></tr><tr><td>IP Address</td><td>${inc.ip}</td></tr><tr><td>Status</td><td><span class="bc">${inc.status.toUpperCase()}</span></td></tr></table>
@@ -106,7 +106,7 @@ table{width:100%;border-collapse:collapse;font-size:12px}th{background:#f0f0f0;p
 <tr><td>Device</td><td><span class="bs">${inc.normalDevice}</span></td><td><span class="bc">${inc.currentDevice}</span></td></tr>
 <tr><td>Amount</td><td><span class="bs">${inc.normalAmt}</span></td><td><span class="bc">${inc.currentAmt}</span></td></tr></table>
 <h2>6. Recommended Actions</h2>${actionsHTML}
-<div class="ft">SentinelAI | ${inc.id} | CONFIDENTIAL — For Internal Use Only</div>
+<div class="ft">FortiSentinel AI | ${inc.id} | CONFIDENTIAL — For Internal Use Only</div>
 <script>window.onload=()=>window.print()</script></body></html>`;
 
   const blob = new Blob([html], { type: 'text/html' });

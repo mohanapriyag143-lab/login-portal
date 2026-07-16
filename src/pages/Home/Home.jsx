@@ -31,7 +31,7 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className={styles.heroContent}
         >
-          <h1 className={`glow-text ${styles.title}`}>SentinelAI</h1>
+          <h1 className={`glow-text ${styles.title}`}>FortiSentinel AI</h1>
           <h2 className={styles.subtitle}>
             One Platform. Every Signal. Zero Blind Spots.
           </h2>
@@ -91,7 +91,7 @@ const Home = () => {
               {/* Header */}
               <div className={styles.modalHeader}>
                 <div>
-                  <h2 className="glow-text">SentinelAI Platform Demo</h2>
+                  <h2 className="glow-text">FortiSentinel AI Platform Demo</h2>
                   <p className={styles.modalSub}>AI-Powered Banking Cybersecurity — Feature Walkthrough</p>
                 </div>
                 <button className={styles.closeBtn} onClick={() => setShowDemo(false)}>
