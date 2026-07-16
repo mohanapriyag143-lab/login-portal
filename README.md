@@ -8,7 +8,7 @@ A premium, futuristic banking cybersecurity web application that detects banking
 
 ## 🚀 Live Demo
 
-> Run locally: `npm install && npm run dev` → http://localhost:5173
+> Run locally: `npm install && npm run dev` → https://login-portal-ruby.vercel.app/#/
 
 ---
 
@@ -82,7 +82,7 @@ npm install
 npm run dev
 ```
 
-Open **http://localhost:5173**
+Open **https://login-portal-ruby.vercel.app/#/**
 
 ---
 
